@@ -16,7 +16,6 @@
 
 body {
     background: url(../assets/main_bg.svg);
-
 }
 
 main {
@@ -38,13 +37,18 @@ header p {
     margin-bottom: 2%;
 }
 
-#hero_img {
+#hero_img, .last_card{
     display: block;
     margin: 1% auto 1% auto;
     border: solid;
     padding: 5%;
     background: var(--box_bg);
 }
+
+.last_card { 
+    padding: 2%;
+}
+
 
 #topbar {
     display: flex;
@@ -93,14 +97,25 @@ nav,#topbar a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2%;
 }
 
 .card_title p {
     font-size: 22px;
+    text-align: center;
 }
 
 .card article  img{
     width: auto;
     height: auto;
     padding: 2em;
+}
+
+footer{
+    display: flex;
+    border: solid;
+    border-width: 1px;
+    text-align: center;
+    background: var(--box_bg);
+    justify-content: center;
 }
