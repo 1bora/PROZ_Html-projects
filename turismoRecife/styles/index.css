@@ -149,3 +149,8 @@
         padding: 3%;
         background: var(--box_bg);
     }
+
+    #images { 
+        height: 400px;
+        width: auto;
+    }
