@@ -1,6 +1,18 @@
+
+
 :root {
     --box_bg: rgb(243, 243, 243);
+    /* font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; */
+
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+
 
 body {
     background: url(../assets/main_bg.svg);
@@ -26,7 +38,7 @@ header p {
     margin-bottom: 2%;
 }
 
-header img {
+#hero_img {
     display: block;
     margin: 1% auto 1% auto;
     border: solid;
@@ -34,13 +46,30 @@ header img {
     background: var(--box_bg);
 }
 
-nav {
+#topbar {
+    display: flex;
     border: solid;
+    border-width: 1px;
     text-align: center;
     background: var(--box_bg);
+    justify-content: center;
 }
 
-nav a {
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav a { 
+    margin: 0 1.5em 0 1.5em;
+}
+
+#logo {
+    width: 5em;
+    height: auto;
+}
+
+nav,#topbar a {
     text-decoration: none;
     color: gray;
 }
